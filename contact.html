@@ -1,42 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Gasien Ferdinand</title>
-         <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-         <header>
-       <nav class="boy">
-            <div class="logo">
-    <img src="LOGO.jpg" alt="logo">
-</div>
-            <a href="index.html">Home</a>
-              <a href="acco.html">Accomplishment</a>
-                    <a href="contact.html" class="contact-btn">Contact</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact information and message form.">
+    <title>Contact | Paul Biya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="boy" aria-label="Main navigation">
+            <a class="logo" href="index.html" aria-label="Home">
+                <img src="LOGO.jpg" alt="Cameroon presidency logo">
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="acco.html">Accomplishments</a>
+                <a href="contact.html" class="contact-btn" aria-current="page">Contact</a>
+            </div>
         </nav>
     </header>
-    <h1>Presidential Info-box</h1>
-        <div class="contact-container">
+
+    <main class="page-content contact-page">
+        <section class="contact-heading">
+            <p class="eyebrow">Get in touch</p>
+            <h1>Contact</h1>
+            <p>Use the contact information below or prepare a message using the form.</p>
+        </section>
+
+        <section class="contact-container" aria-label="Contact details and message form">
             <div class="contact-info">
-                <h2>Contact Us</h2>
-                <p>Feel free to contact us anytime.</p>
-                <div class="info-box">
-                    <p>Email:PresidentPaulBiya@gmail.com</p>
-                    <p>Phone: +237654094820</p>
-                    <p>Location:Yaounde , CAMEROON</p>
-                </div>
+                <p class="eyebrow">Contact details</p>
+                <h2>Presidential Info-box</h2>
+                <p>For questions or comments, please use the details provided here.</p>
+                <address class="info-box">
+                    <p><strong>Email</strong><br><a href="mailto:PresidentPaulBiya@gmail.com">PresidentPaulBiya@gmail.com</a></p>
+                    <p><strong>Phone</strong><br><a href="tel:+237654094820">+237 654 094 820</a></p>
+                    <p><strong>Location</strong><br>Yaoundé, Cameroon</p>
+                </address>
             </div>
-            <form class="contact-form">
-<input type="text" placeholder="Your name">
-<input type="email" placeholder="Email">
-<textarea rows="5" placeholder="Your Message"></textarea>
-<button type="submit">Send Message</button>
-            </form>
-        </div>
-         <footer>
+
+            <div class="contact-form-panel">
+                <h2>Send a message</h2>
+                <form class="contact-form" action="mailto:PresidentPaulBiya@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Your name</label>
+                    <input id="name" name="name" type="text" placeholder="Enter your name" autocomplete="name" required>
+
+                    <label for="email">Email address</label>
+                    <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+
+                    <label for="message">Your message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+
+                    <button type="submit">Send message</button>
+                    <p class="form-note">Your email app will open to send this message. This page does not store or submit messages to a server.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
         Copyright © 2026 Presidency of the Republic of Cameroon. All Rights Reserved.
     </footer>
-    </body>
+</body>
 </html>
